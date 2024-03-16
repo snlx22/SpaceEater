@@ -1,6 +1,6 @@
 # SPACEATER
 
-O SPACEATER é um projeto de código aberto projetado para criar um arquivo grande em seu sistema para testar a capacidade de armazenamento ou as permissões de escrita. Ele tenta escrever um arquivo binário de tamanho considerável no diretório do sistema Windows para simular uma operação intensiva de escrita.
+O SPACEATER é um projeto simples de código aberto projetado para criar um arquivo grande em seu sistema para testar a capacidade de armazenamento ou as permissões de escrita. Ele tenta escrever um arquivo binário de tamanho considerável no diretório do sistema Windows para simular uma operação intensiva de escrita.
 
 ## Aviso
 

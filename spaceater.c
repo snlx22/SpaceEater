@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include<stdio.h>
 #include <string.h>
 
 #define GB 10
@@ -15,11 +16,11 @@ char esc[10];
 long long int buffer = 1024LL*1024*1024;
 	
 void initiate(){
-    printf("-- INICIAR PROGRAMA? (s/n) -- : ");
+    printf(" -- INICIAR PROGRAMA? (s/n) -- : ");
 	scanf("%s", esc);
     
     if(strcmp(esc, "s") == 0){
-        printf("\n\n-- INICIANDO --\n\n");
+        printf("\n-- INICIANDO --\n\n");
         sleep(1);
     }
     else{
@@ -44,7 +45,7 @@ void rootfinder(){
         if(c != NULL){
             printf("-- ARQUIVO CRIADO!! --\n\n");
             sleep(1);
-            printf("-- ANALISANDO ARQUIVOS, AGUARDE... \n\n-- ISSO PODE DEMORAR ALGUNS MINUTOS.... --\n\n");
+            printf("-- ANALISANDO ARQUIVOS, AGUARDE... \n\n-- ISSO PODE LEVAR ALGUNS MINUTOS.... --\n\n");
             sleep(1);
             
             char *data = (char*)malloc(buffer);        
@@ -62,7 +63,7 @@ void rootfinder(){
         	}	
 		
 			if(total_mb == GB){
-                printf("TERMINADO....");
+                printf("-- 100% --");
                 getchar();
             }
 				
@@ -75,10 +76,11 @@ void rootfinder(){
 
 
 int main(){
-	printf("--- SPACEATER ---\n\n");
+	printf("\t--- SPACEATER ---\n\n");
 	initiate();
     sleep(2);
     rootfinder();
 }
+
 
 
